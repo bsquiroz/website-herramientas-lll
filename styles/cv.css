@@ -1,0 +1,77 @@
+:root {
+    --cv-color: #f39189;
+}
+
+.x {
+    color: var(--cv-color);
+}
+
+.cv {
+    min-height: calc(100vh - 100px - 50px);
+    color: var(--cv-color);
+}
+
+.cv-banner {
+    height: 300px;
+    background-color: var(--cv-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cv-banner h1 {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cv-container {
+    min-height: calc(100vh - 300px - 100px - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-content div a {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 1s;
+    margin: 1em;
+}
+
+.cv-content div:hover a {
+    transform: translateY(-1em);
+}
+
+.cv-content div:nth-child(2):hover a {
+    transform: translateY(1em);
+}
+
+@media (max-width: 720px) {
+    .cv {
+        min-height: calc(100vh - 50px);
+    }
+}
+
+@media (max-width: 500px) {
+    .cv-content div a {
+        width: 210px;
+        height: 70px;
+    }
+}

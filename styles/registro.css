@@ -1,0 +1,105 @@
+:root {
+    --registro-color: #0a81ab;
+}
+
+.registro {
+    min-height: calc(100vh - 100px - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-registro {
+    background-color: var(--registro-color);
+    padding: 1em;
+    width: 500px;
+    border-radius: 1em;
+}
+
+.content-registro h1 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.content-registro form {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.content-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputs-1 {
+    width: 50%;
+    text-align: center;
+}
+
+.inputs-2 {
+    width: 50%;
+    text-align: center;
+}
+
+.content-inputs input {
+    width: 90%;
+    margin-bottom: 1em;
+    padding: 10px 5px;
+    padding: 10px 5px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn {
+    width: 50%;
+    margin-bottom: 1em;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #000;
+    color: #fff;
+}
+
+.content-registro a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.content-registro a:hover {
+    border: 1px solid #000;
+    padding: 5px;
+}
+@media (max-width: 720px) {
+    .registro {
+        min-height: calc(100vh - 50px);
+    }
+}
+
+@media (max-width: 460px) {
+    .content-registro {
+        width: 90%;
+        margin: auto;
+    }
+
+    .inputs-1 {
+        width: 100%;
+    }
+
+    .inputs-2 {
+        width: 100%;
+    }
+}

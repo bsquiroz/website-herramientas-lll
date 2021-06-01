@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="icon" href="../assets/b.ico" />
+        <link rel="stylesheet" href="../css.css" />
+        <link rel="stylesheet" href="../styles/login.css" />
+    </head>
+    <body>
+        <div class="x" id="x">X</div>
+        <nav class="navegacion active" id="active">
+            <span>
+                <a href="./index.html">
+                    <span>B</span>
+                    <span>S</span>
+                    <span>Q</span>
+                    <span>U</span>
+                    <span>I</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>Z</span>
+                </a>
+            </span>
+            <ul id="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./about.html">Sobre mi</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./interest.html">Intereses</a></li>
+                <li><a href="./form.html">Formulario</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+        <section class="login">
+            <div class="content-login">
+                <h1>Bienvenido al login</h1>
+                <form id="formLogin">
+                    <input
+                        type="email"
+                        placeholder="Ingrese su correo"
+                        name="email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Ingrese su contraseña"
+                        name="pass"
+                        required
+                    />
+                    <input class="btn" type="submit" value="Entrar" />
+                    <div class="cargando cargando-show" id="cargandoLogin">
+                        <h2>Cargando...</h2>
+                    </div>
+                    <div class="error error-show" id="errorlogin">
+                        <h1>Error</h1>
+                    </div>
+                </form>
+                <a href="./registro.html">¿No te has registrado?</a>
+            </div>
+        </section>
+        <footer>
+            <small>Programado y diseñado por brayan muñoz</small>
+        </footer>
+    </body>
+    <!-- SCRIPT ENCARGADO DE LA NAVEGACION DE MI APP-->
+    <script src="../js.js"></script>
+
+    <!-- SCRIP DE FIREBASE -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAc2KwFOJ45mF6Td_1vY8TukqVa4NL8OTs",
+            authDomain: "website-bsquiroz.firebaseapp.com",
+            projectId: "website-bsquiroz",
+            storageBucket: "website-bsquiroz.appspot.com",
+            messagingSenderId: "196650730293",
+            appId: "1:196650730293:web:b9f3b4e1b185a5abcb427c",
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+    </script>
+
+    <!-- ESTE ES MI SCRIP -->
+    <script src="./jsFill/login.js"></script>
+</html>

@@ -1,0 +1,78 @@
+:root {
+    --about-color: #583d72;
+}
+
+.x {
+    color: var(--about-color);
+}
+
+.about {
+    min-height: calc(100vh - 100px - 50px);
+    color: var(--about-color);
+}
+
+.about-banner {
+    height: 300px;
+    background-color: var(--about-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-banner h1 {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-container {
+    width: 85%;
+    margin: 1em auto;
+}
+
+.principal h2 {
+    margin-bottom: 1em;
+}
+
+.principal {
+    padding-bottom: 2em;
+    border-bottom: 5px solid var(--about-color);
+}
+
+.about-content {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content .card-box {
+    width: 500px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.about-content .card-box:nth-child(2) {
+    border-right: 5px solid var(--about-color);
+    border-left: 5px solid var(--about-color);
+}
+
+.about-content .card-box h3 {
+    margin-bottom: 1em;
+}
+
+@media (max-width: 720px) {
+    .about {
+        min-height: calc(100vh - 50px);
+    }
+
+    .about-content .card-box:nth-child(2) {
+        border: none;
+    }
+}

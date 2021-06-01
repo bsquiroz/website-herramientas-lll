@@ -1,0 +1,117 @@
+:root {
+    --interest-color: #3a6351;
+}
+
+.login {
+    min-height: calc(100vh - 100px - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-login {
+    background-color: var(--interest-color);
+    width: 400px;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.content-login h1 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.content-login form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-login input[type="password"],
+.content-login input[type="email"] {
+    width: 80%;
+    margin-bottom: 1em;
+    padding: 10px 5px;
+    padding: 10px 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn {
+    width: 50%;
+    margin-bottom: 1em;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #000;
+    color: #fff;
+}
+
+.content-login a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.content-login a:hover {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.cargando {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cargando-show {
+    display: none;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-show {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .login {
+        min-height: calc(100vh - 50px);
+    }
+}
+
+@media (max-width: 400px) {
+    .content-login {
+        width: 90%;
+        margin: auto;
+    }
+}
